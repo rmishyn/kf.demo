@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct EventsConfiguration {}
+struct EventsConfiguration {
+    let eventsService: EventsServiceProtocol
+}
 
 class EventsConfigurator {
     func configure(output: EventsOutput, configuration: EventsConfiguration) -> EventsViewController {

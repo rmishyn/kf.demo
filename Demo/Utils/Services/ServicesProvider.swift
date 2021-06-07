@@ -9,4 +9,13 @@ import Foundation
 
 class ServicesProvider: ServicesProviding {
     
+    let eventsService: EventsServiceProtocol
+    
+    // MARK: Lifecycle
+    
+    /// Initializer
+    init(eventsService: EventsServiceProtocol) {
+        self.eventsService = eventsService
+    }
+    
 }

@@ -37,7 +37,7 @@
             </objects>
             <point key="canvasLocation" x="-303" y="119"/>
         </scene>
-        <!--Events View Controller-->
+        <!--Stockholm-->
         <scene sceneID="jFI-Bs-1JU">
             <objects>
                 <viewController storyboardIdentifier="EventsViewController" id="Qdn-AY-cRE" customClass="EventsViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,6 +61,7 @@
                             <constraint firstItem="Tnj-fq-fFC" firstAttribute="centerX" secondItem="JM8-3r-XQg" secondAttribute="centerX" id="aJv-2D-atb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Stockholm" id="oPu-n5-o1T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cH8-2X-cp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
