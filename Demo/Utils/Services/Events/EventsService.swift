@@ -15,7 +15,7 @@ class EventsService: EventsServiceProtocol {
     /// Service used to call API functionality
     private var serverService: EventsServerServiceProtocol
 //    /// Service providing a functionality to operate with `Pie` objects in local database
-//    private var dbService: DBObjectService<Event>
+    private var dbService: DBObjectService<Event>
     
     // MARK: Initialization
     
@@ -25,9 +25,9 @@ class EventsService: EventsServiceProtocol {
     ///   - dbService: Service providing a functionality to operate with `Pie` objects in local database
     ///   - instrumentsService: Service used to support securities instruments related functionality
     ///   - sessionIdProvider: Provider of API session identifier
-    init(serverService: EventsServerServiceProtocol/*, dbService: DBObjectService<Event>*/) {
+    init(serverService: EventsServerServiceProtocol, dbService: DBObjectService<Event>) {
         self.serverService = serverService
-//        self.dbService = dbService
+        self.dbService = dbService
     }
     
     // MARK: EventsServiceProtocol
@@ -54,7 +54,13 @@ class EventsService: EventsServiceProtocol {
                 let venues: [VenueModel] = venuesData.compactMap({ VenueModel(JSON: $0) })
                 let events: [EventModel] = eventsData.compactMap({ EventModel(JSON: $0) })
                 
-                _completion(.success(()))
+                self?.dbService.performChanges({ (context) in
+                    let _ = venues.map({ Venue.item(with: $0, in: context) })
+                    let _ = events.map({ Event.item(with: $0, in: context) })
+                    return true
+                }, completion: { (result) in
+                    _completion(result)
+                })
             }
         })
     }

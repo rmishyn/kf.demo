@@ -26,6 +26,7 @@ struct DprintDateFormatter {
 enum LogCategory: String {
     case networking = "🚀 >NET>"
     case db = "🛢 >DB>"
+    case error = "⛔️ >ERROR>"
     case others = ""
 }
 

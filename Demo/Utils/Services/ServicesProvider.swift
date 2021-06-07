@@ -10,12 +10,15 @@ import Foundation
 class ServicesProvider: ServicesProviding {
     
     let eventsService: EventsServiceProtocol
+    let dbManager: DBManagement
     
     // MARK: Lifecycle
     
     /// Initializer
-    init(eventsService: EventsServiceProtocol) {
+    init(eventsService: EventsServiceProtocol,
+         dbManager: DBManagement) {
         self.eventsService = eventsService
+        self.dbManager = dbManager
     }
     
 }

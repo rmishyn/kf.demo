@@ -15,4 +15,8 @@ typealias ArrResultCompletion = ResultCompletion<[Any]>
 typealias DictResultCompletion = ResultCompletion<[String:Any]>
 typealias DataResultCompletion = ResultCompletion<Data>
 
+typealias VoidCompletion = () -> ()
 typealias DoubleCompletion = (Double) -> ()
+
+typealias DBObjectIdentifierResultCompletion = ResultCompletion<DBObjectIdentifier?>
+typealias DBObjectIdentifiersResultCompletion = ResultCompletion<[DBObjectIdentifier]>
