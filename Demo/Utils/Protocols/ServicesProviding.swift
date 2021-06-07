@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ServicesProviding {
-    
+    var eventsService: EventsServiceProtocol {get}
 }

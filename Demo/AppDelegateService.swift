@@ -31,6 +31,10 @@ class AppDelegateService {
     
     /// Create global services and preare an object containing references to all global app services
     private func setupServices() {
-        servicesProvider = ServicesProvider()
+        
+        let sessionService = URLSessionService()
+        let eventsService = EventsService(serverService: EventsServerService(core: sessionService)/*, dbManager: dbManager*/)
+        
+        servicesProvider = ServicesProvider(eventsService: eventsService)
     }
 }
