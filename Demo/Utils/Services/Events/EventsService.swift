@@ -51,6 +51,9 @@ class EventsService: EventsServiceProtocol {
                     return
                 }
                 
+                let venues: [VenueModel] = venuesData.compactMap({ VenueModel(JSON: $0) })
+                let events: [EventModel] = eventsData.compactMap({ EventModel(JSON: $0) })
+                
                 _completion(.success(()))
             }
         })

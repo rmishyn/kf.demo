@@ -46,6 +46,11 @@
 		44E3DB2F266E958E0013A5F3 /* EventsServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB2E266E958E0013A5F3 /* EventsServerService.swift */; };
 		44E3DB31266E96CE0013A5F3 /* EventsServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB30266E96CE0013A5F3 /* EventsServiceContract.swift */; };
 		44E3DB33266E971A0013A5F3 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB32266E971A0013A5F3 /* EventsService.swift */; };
+		44E3DB36266EADA10013A5F3 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB35266EADA10013A5F3 /* VenueModel.swift */; };
+		44E3DB38266EADB10013A5F3 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB37266EADB10013A5F3 /* EventModel.swift */; };
+		44E3DB3A266EB0810013A5F3 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB39266EB0810013A5F3 /* Mapping.swift */; };
+		44E3DB3C266EB32F0013A5F3 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB3B266EB32F0013A5F3 /* DateFormatter+Extension.swift */; };
+		6E650658E46FA4115E0F2FE3 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B943046BCBF9B5C4C57D69 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +93,13 @@
 		44E3DB2E266E958E0013A5F3 /* EventsServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServerService.swift; sourceTree = "<group>"; };
 		44E3DB30266E96CE0013A5F3 /* EventsServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceContract.swift; sourceTree = "<group>"; };
 		44E3DB32266E971A0013A5F3 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		44E3DB35266EADA10013A5F3 /* VenueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
+		44E3DB37266EADB10013A5F3 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		44E3DB39266EB0810013A5F3 /* Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		44E3DB3B266EB32F0013A5F3 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		531F493955155E61031A744C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		9C909F1BD8C71C2BE7AA4336 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B943046BCBF9B5C4C57D69 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 			files = (
 				44E3DAD8266D6A3C0013A5F3 /* SDWebImage in Frameworks */,
 				44E3DB25266E8B4B0013A5F3 /* Alamofire in Frameworks */,
+				6E650658E46FA4115E0F2FE3 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +121,8 @@
 			children = (
 				44E3DABA266D64EB0013A5F3 /* Demo */,
 				44E3DAB9266D64EB0013A5F3 /* Products */,
+				5E4E0353315F44EDAF6EF2B9 /* Pods */,
+				BE6679A8147EDB0F50203D0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +142,7 @@
 				44E3DABD266D64EB0013A5F3 /* SceneDelegate.swift */,
 				44E3DAE4266D6EFC0013A5F3 /* SceneDelegateService.swift */,
 				44E3DB0F266E84420013A5F3 /* AppConfiguration.swift */,
+				44E3DB34266EAD890013A5F3 /* Data */,
 				44E3DACF266D68460013A5F3 /* UI */,
 				44E3DAD0266D684C0013A5F3 /* Utils */,
 				44E3DAC1266D64EB0013A5F3 /* Main.storyboard */,
@@ -229,6 +245,7 @@
 			children = (
 				44E3DAFE266D7B4D0013A5F3 /* UIKit */,
 				44E3DB21266E8A6B0013A5F3 /* NSError+Extension.swift */,
+				44E3DB3B266EB32F0013A5F3 /* DateFormatter+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +317,33 @@
 			path = EventsAPI;
 			sourceTree = "<group>";
 		};
+		44E3DB34266EAD890013A5F3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				44E3DB39266EB0810013A5F3 /* Mapping.swift */,
+				44E3DB35266EADA10013A5F3 /* VenueModel.swift */,
+				44E3DB37266EADB10013A5F3 /* EventModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5E4E0353315F44EDAF6EF2B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C909F1BD8C71C2BE7AA4336 /* Pods-Demo.debug.xcconfig */,
+				531F493955155E61031A744C /* Pods-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE6679A8147EDB0F50203D0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B943046BCBF9B5C4C57D69 /* Pods_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,9 +351,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44E3DACC266D64EC0013A5F3 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				8D11708BC984D5FF33914711 /* [CP] Check Pods Manifest.lock */,
 				44E3DAB4266D64EB0013A5F3 /* Sources */,
 				44E3DAB5266D64EB0013A5F3 /* Frameworks */,
 				44E3DAB6266D64EB0013A5F3 /* Resources */,
+				6870A7870CC1573A1B1B04BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +419,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6870A7870CC1573A1B1B04BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D11708BC984D5FF33914711 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44E3DAB4266D64EB0013A5F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -380,6 +468,7 @@
 			files = (
 				44E3DB2B266E91B10013A5F3 /* EventsAPIRouter.swift in Sources */,
 				44E3DB0E266E840D0013A5F3 /* URLRequestConvertible.swift in Sources */,
+				44E3DB3A266EB0810013A5F3 /* Mapping.swift in Sources */,
 				44E3DB02266D7BCC0013A5F3 /* NameDescribable.swift in Sources */,
 				44E3DB12266E85BF0013A5F3 /* ServerService.swift in Sources */,
 				44E3DB00266D7B5F0013A5F3 /* UIViewController+Extension.swift in Sources */,
@@ -388,8 +477,10 @@
 				44E3DAEE266D753E0013A5F3 /* EventsCoordinator.swift in Sources */,
 				44E3DB09266E825B0013A5F3 /* Logging.swift in Sources */,
 				44E3DB10266E84420013A5F3 /* AppConfiguration.swift in Sources */,
+				44E3DB38266EADB10013A5F3 /* EventModel.swift in Sources */,
 				44E3DB33266E971A0013A5F3 /* EventsService.swift in Sources */,
 				44E3DAF6266D79320013A5F3 /* EventsContract.swift in Sources */,
+				44E3DB36266EADA10013A5F3 /* VenueModel.swift in Sources */,
 				44E3DB15266E860C0013A5F3 /* Types.swift in Sources */,
 				44E3DAE7266D71600013A5F3 /* CoordinatorContract.swift in Sources */,
 				44E3DB1B266E884E0013A5F3 /* URLSessionService.swift in Sources */,
@@ -399,6 +490,7 @@
 				44E3DB1E266E88F20013A5F3 /* ServerServicesHelper.swift in Sources */,
 				44E3DB2F266E958E0013A5F3 /* EventsServerService.swift in Sources */,
 				44E3DAF3266D78A60013A5F3 /* Storyboard.swift in Sources */,
+				44E3DB3C266EB32F0013A5F3 /* DateFormatter+Extension.swift in Sources */,
 				44E3DB22266E8A6B0013A5F3 /* NSError+Extension.swift in Sources */,
 				44E3DADD266D6B9C0013A5F3 /* AppDelegateService.swift in Sources */,
 				44E3DAE0266D6C240013A5F3 /* ServicesProviding.swift in Sources */,
@@ -555,6 +647,7 @@
 		};
 		44E3DACD266D64EC0013A5F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C909F1BD8C71C2BE7AA4336 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -573,6 +666,7 @@
 		};
 		44E3DACE266D64EC0013A5F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531F493955155E61031A744C /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

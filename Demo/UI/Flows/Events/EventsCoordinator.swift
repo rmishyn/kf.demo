@@ -22,7 +22,7 @@ class EventsCoordinator: Coordinator {
     
     init(configuration: CoordinatorConfiguration<EventsCoordinatorOutput>) {
         navigationController = configuration.navigationController
-        navigationController.isNavigationBarHidden = true
+        navigationController.isNavigationBarHidden = false
         self.output = configuration.output
         self.servicesProvider = configuration.servicesProvider
     }

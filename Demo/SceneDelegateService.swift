@@ -44,7 +44,7 @@ class SceneDelegateService {
     /// Setup and start root screens coordinator
     private func setupSceneCoordinator() {
         let navigationController = UINavigationController()
-        navigationController.setNavigationBarHidden(true, animated: false)
+        navigationController.setNavigationBarHidden(false, animated: false)
         window.rootViewController = navigationController
         sceneCoordinator = SceneCoordinator(navigationController: navigationController, servicesProvider: servicesProvider)
         sceneCoordinator.start()

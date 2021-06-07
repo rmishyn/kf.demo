@@ -17,7 +17,8 @@ struct AppConfiguration {
         static let defaultAcceptType = HTTPContentType.json.rawValue
         /// Default value of "Content-Type" header parameter in API requests
         static let defaultContentType = HTTPContentType.json.rawValue
-        
+        /// Path to images hosting. Used as prefix to build full URL to image
+        static let imagesStorageUrl = "https://res.cloudinary.com/keyflow/image/upload"
     }
     
     /// Constants used during development
