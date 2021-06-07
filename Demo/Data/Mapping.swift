@@ -9,6 +9,8 @@ import Foundation
 
 struct Mapping {
     
+    static let id = "id"
+    
     struct Venue {
         static let id = "venueId"
         static let name = "venueName"

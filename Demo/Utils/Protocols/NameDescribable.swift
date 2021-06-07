@@ -20,6 +20,9 @@ extension NameDescribable {
     
     /// Class identifier
     static var identifier: String { String(describing: self) }
+    
+    /// Name of database entity
+    static var entityName: String { typeName }
 }
 
 extension NSObject: NameDescribable { }
