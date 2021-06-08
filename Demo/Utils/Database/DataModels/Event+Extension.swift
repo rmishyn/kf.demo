@@ -26,7 +26,17 @@ extension Event: DBRequestable {
     }
 }
 
+// MARK: - DBNameFilterable
+
+extension Event: DBNameFilterable {
+    static var filteredFieldsNames: [String] { [] }
+}
+
 extension Event {
+    
+    var imagesIdentifiers: [String] {
+        images?.components(separatedBy: "|||") ?? []
+    }
     
     /// Create or update (if exists) database `Event` item with data model
     /// - Parameters:

@@ -9,6 +9,8 @@ import Foundation
 
 struct EventsConfiguration {
     let eventsService: EventsServiceProtocol
+    let dbEventsService: DBObjectService<Event>
+    let contentProvidersFactory: ContentProvidersFactoryProtocol
 }
 
 class EventsConfigurator {

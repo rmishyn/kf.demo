@@ -15,7 +15,11 @@ class EventsPresenter: EventsPresentation {
     private unowned var view: EventsInterface!
     
     private let eventsService: EventsServiceProtocol
+    private let dbEventsService: DBObjectService<Event>
+    private let contentProvidersFactory: ContentProvidersFactoryProtocol
+    private var tableViewContentProvider: TableViewContentProviding?
     
+    private var viewDidLoad: Bool = false
     private var isEventsRequestActive: Bool = false
     
     // MARK: Public methods
@@ -24,7 +28,10 @@ class EventsPresenter: EventsPresentation {
         self.view = view
         self.output = output
         self.eventsService = configuration.eventsService
+        self.dbEventsService = configuration.dbEventsService
+        self.contentProvidersFactory = configuration.contentProvidersFactory
         refreshEvents()
+        prepareDataProvider()
     }
     
     // MARK: Private methods
@@ -40,11 +47,37 @@ class EventsPresenter: EventsPresentation {
                                 pageNumber: requestParameters.pageNumber,
                                 pageSize: requestParameters.pageSize, completion: { [weak self] (result) in
                                     guard let self = self else { return }
-                                    defer { self.isEventsRequestActive = false }
+                                    defer { self.isEventsRequestActive = false; self.view.stopRefresh() }
                                     switch result {
                                     case .failure: break
                                     case .success: break
                                     }
                                 })
+    }
+    
+    private func prepareDataProvider() {
+        let dataSource = FRCDataSource<Event>(dbService: self.dbEventsService, predicates: nil)
+        let tableViewContentProvider = contentProvidersFactory.eventsContentProvider(dataSource: dataSource)
+        
+//        tableViewContentProvider.onDidSelectItem = { [weak self] (indexPath, _) in
+//            self?.openItem(at: indexPath)
+//        }
+        self.tableViewContentProvider = tableViewContentProvider
+        if viewDidLoad {
+            view.setContentProvider(tableViewContentProvider)
+        }
+    }
+    
+    // MARK: EventsPresentation
+    
+    func onViewDidLoad() {
+        if let tableViewContentProvider = tableViewContentProvider {
+            view.setContentProvider(tableViewContentProvider)
+        }
+        viewDidLoad = true
+    }
+    
+    func onRefreshAction() {
+        refreshEvents()
     }
 }

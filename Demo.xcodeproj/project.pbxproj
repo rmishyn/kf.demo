@@ -63,6 +63,19 @@
 		44E3DB57266EC3D60013A5F3 /* Event+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB56266EC3D60013A5F3 /* Event+Extension.swift */; };
 		44E3DB59266EC3E10013A5F3 /* Venue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB58266EC3E10013A5F3 /* Venue+Extension.swift */; };
 		44E3DB5C266EC8040013A5F3 /* DBObjectService+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB5B266EC8040013A5F3 /* DBObjectService+Event.swift */; };
+		44E3DB5F266ECF8B0013A5F3 /* BaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB5E266ECF8B0013A5F3 /* BaseCellProtocol.swift */; };
+		44E3DB61266ECFD20013A5F3 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB60266ECFD20013A5F3 /* BaseTableViewCell.swift */; };
+		44E3DB64266ED29D0013A5F3 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB63266ED29D0013A5F3 /* EventTableViewCell.swift */; };
+		44E3DB66266ED6F90013A5F3 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E3DB65266ED6F90013A5F3 /* EventTableViewCell.xib */; };
+		44E3DB69266ED7A90013A5F3 /* ContentProvidersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB68266ED7A90013A5F3 /* ContentProvidersFactory.swift */; };
+		44E3DB6C266ED8D00013A5F3 /* FRCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB6B266ED8D00013A5F3 /* FRCDataSource.swift */; };
+		44E3DB6E266ED9120013A5F3 /* DBNameFilterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB6D266ED9120013A5F3 /* DBNameFilterable.swift */; };
+		44E3DB71266EDA390013A5F3 /* CollectionDataProvidingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB70266EDA390013A5F3 /* CollectionDataProvidingContract.swift */; };
+		44E3DB73266EDACF0013A5F3 /* TableViewContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB72266EDACF0013A5F3 /* TableViewContentProvider.swift */; };
+		44E3DB76266EDF2A0013A5F3 /* EventsContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB75266EDF2A0013A5F3 /* EventsContentProvider.swift */; };
+		44E3DB78266EE37D0013A5F3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB77266EE37D0013A5F3 /* UIView+Extension.swift */; };
+		44E3DB7A266EE7B30013A5F3 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB79266EE7B30013A5F3 /* URL+Extension.swift */; };
+		44E3DB7C266EEFAC0013A5F3 /* UIViewController+PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3DB7B266EEFAC0013A5F3 /* UIViewController+PullToRefresh.swift */; };
 		6E650658E46FA4115E0F2FE3 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B943046BCBF9B5C4C57D69 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +136,19 @@
 		44E3DB56266EC3D60013A5F3 /* Event+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Extension.swift"; sourceTree = "<group>"; };
 		44E3DB58266EC3E10013A5F3 /* Venue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Venue+Extension.swift"; sourceTree = "<group>"; };
 		44E3DB5B266EC8040013A5F3 /* DBObjectService+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBObjectService+Event.swift"; sourceTree = "<group>"; };
+		44E3DB5E266ECF8B0013A5F3 /* BaseCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellProtocol.swift; sourceTree = "<group>"; };
+		44E3DB60266ECFD20013A5F3 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		44E3DB63266ED29D0013A5F3 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		44E3DB65266ED6F90013A5F3 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		44E3DB68266ED7A90013A5F3 /* ContentProvidersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentProvidersFactory.swift; sourceTree = "<group>"; };
+		44E3DB6B266ED8D00013A5F3 /* FRCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRCDataSource.swift; sourceTree = "<group>"; };
+		44E3DB6D266ED9120013A5F3 /* DBNameFilterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBNameFilterable.swift; sourceTree = "<group>"; };
+		44E3DB70266EDA390013A5F3 /* CollectionDataProvidingContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataProvidingContract.swift; sourceTree = "<group>"; };
+		44E3DB72266EDACF0013A5F3 /* TableViewContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewContentProvider.swift; sourceTree = "<group>"; };
+		44E3DB75266EDF2A0013A5F3 /* EventsContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsContentProvider.swift; sourceTree = "<group>"; };
+		44E3DB77266EE37D0013A5F3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		44E3DB79266EE7B30013A5F3 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		44E3DB7B266EEFAC0013A5F3 /* UIViewController+PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+PullToRefresh.swift"; sourceTree = "<group>"; };
 		531F493955155E61031A744C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		9C909F1BD8C71C2BE7AA4336 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A1B943046BCBF9B5C4C57D69 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				44E3DAE9266D73F30013A5F3 /* SceneCoordinator.swift */,
+				44E3DB5D266ECF4C0013A5F3 /* Common */,
 				44E3DAEB266D74D20013A5F3 /* Flows */,
 			);
 			path = UI;
@@ -193,6 +220,8 @@
 			children = (
 				44E3DB14266E860C0013A5F3 /* Types.swift */,
 				44E3DB1F266E89420013A5F3 /* ErrorCodes.swift */,
+				44E3DB6F266ED9E90013A5F3 /* CollectionsDataProviding */,
+				44E3DB67266ED7870013A5F3 /* ContentProviding */,
 				44E3DB3D266EBA960013A5F3 /* Database */,
 				44E3DB07266E81FA0013A5F3 /* Logging */,
 				44E3DB06266E81EA0013A5F3 /* Networking */,
@@ -210,6 +239,7 @@
 				44E3DAEF266D76260013A5F3 /* Coodinator */,
 				44E3DADF266D6C240013A5F3 /* ServicesProviding.swift */,
 				44E3DB01266D7BCC0013A5F3 /* NameDescribable.swift */,
+				44E3DB5E266ECF8B0013A5F3 /* BaseCellProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -263,6 +293,7 @@
 				44E3DAF7266D79400013A5F3 /* EventsConfigurator.swift */,
 				44E3DAF9266D79510013A5F3 /* EventsViewController.swift */,
 				44E3DAFB266D795C0013A5F3 /* EventsPresenter.swift */,
+				44E3DB62266ED2860013A5F3 /* Cells */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -274,6 +305,7 @@
 				44E3DAFE266D7B4D0013A5F3 /* UIKit */,
 				44E3DB21266E8A6B0013A5F3 /* NSError+Extension.swift */,
 				44E3DB3B266EB32F0013A5F3 /* DateFormatter+Extension.swift */,
+				44E3DB79266EE7B30013A5F3 /* URL+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				44E3DAFF266D7B5F0013A5F3 /* UIViewController+Extension.swift */,
+				44E3DB7B266EEFAC0013A5F3 /* UIViewController+PullToRefresh.swift */,
+				44E3DB77266EE37D0013A5F3 /* UIView+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -377,6 +411,7 @@
 				44E3DB49266EBD3F0013A5F3 /* DBRequestable.swift */,
 				44E3DB4B266EBE220013A5F3 /* DBIdentifibleByIntId.swift */,
 				44E3DB4D266EC1210013A5F3 /* DBIdentifibleByStringId.swift */,
+				44E3DB6D266ED9120013A5F3 /* DBNameFilterable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -404,6 +439,58 @@
 				44E3DB5B266EC8040013A5F3 /* DBObjectService+Event.swift */,
 			);
 			path = DBObjectServiceExtensions;
+			sourceTree = "<group>";
+		};
+		44E3DB5D266ECF4C0013A5F3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				44E3DB60266ECFD20013A5F3 /* BaseTableViewCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		44E3DB62266ED2860013A5F3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44E3DB63266ED29D0013A5F3 /* EventTableViewCell.swift */,
+				44E3DB65266ED6F90013A5F3 /* EventTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44E3DB67266ED7870013A5F3 /* ContentProviding */ = {
+			isa = PBXGroup;
+			children = (
+				44E3DB68266ED7A90013A5F3 /* ContentProvidersFactory.swift */,
+				44E3DB74266EDF150013A5F3 /* ContentProviders */,
+				44E3DB6A266ED8820013A5F3 /* DataSources */,
+			);
+			path = ContentProviding;
+			sourceTree = "<group>";
+		};
+		44E3DB6A266ED8820013A5F3 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				44E3DB6B266ED8D00013A5F3 /* FRCDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		44E3DB6F266ED9E90013A5F3 /* CollectionsDataProviding */ = {
+			isa = PBXGroup;
+			children = (
+				44E3DB70266EDA390013A5F3 /* CollectionDataProvidingContract.swift */,
+				44E3DB72266EDACF0013A5F3 /* TableViewContentProvider.swift */,
+			);
+			path = CollectionsDataProviding;
+			sourceTree = "<group>";
+		};
+		44E3DB74266EDF150013A5F3 /* ContentProviders */ = {
+			isa = PBXGroup;
+			children = (
+				44E3DB75266EDF2A0013A5F3 /* EventsContentProvider.swift */,
+			);
+			path = ContentProviders;
 			sourceTree = "<group>";
 		};
 		5E4E0353315F44EDAF6EF2B9 /* Pods */ = {
@@ -490,6 +577,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E3DB66266ED6F90013A5F3 /* EventTableViewCell.xib in Resources */,
 				44E3DAC8266D64EC0013A5F3 /* LaunchScreen.storyboard in Resources */,
 				44E3DAC5266D64EC0013A5F3 /* Assets.xcassets in Resources */,
 				44E3DAC3266D64EB0013A5F3 /* Main.storyboard in Resources */,
@@ -559,14 +647,18 @@
 				44E3DB09266E825B0013A5F3 /* Logging.swift in Sources */,
 				44E3DB57266EC3D60013A5F3 /* Event+Extension.swift in Sources */,
 				44E3DB10266E84420013A5F3 /* AppConfiguration.swift in Sources */,
+				44E3DB69266ED7A90013A5F3 /* ContentProvidersFactory.swift in Sources */,
 				44E3DB38266EADB10013A5F3 /* EventModel.swift in Sources */,
 				44E3DB4A266EBD3F0013A5F3 /* DBRequestable.swift in Sources */,
 				44E3DB33266E971A0013A5F3 /* EventsService.swift in Sources */,
 				44E3DB46266EBCC50013A5F3 /* DBEntity.swift in Sources */,
+				44E3DB64266ED29D0013A5F3 /* EventTableViewCell.swift in Sources */,
 				44E3DAF6266D79320013A5F3 /* EventsContract.swift in Sources */,
 				44E3DB36266EADA10013A5F3 /* VenueModel.swift in Sources */,
+				44E3DB61266ECFD20013A5F3 /* BaseTableViewCell.swift in Sources */,
 				44E3DB15266E860C0013A5F3 /* Types.swift in Sources */,
 				44E3DAE7266D71600013A5F3 /* CoordinatorContract.swift in Sources */,
+				44E3DB7A266EE7B30013A5F3 /* URL+Extension.swift in Sources */,
 				44E3DB1B266E884E0013A5F3 /* URLSessionService.swift in Sources */,
 				44E3DB31266E96CE0013A5F3 /* EventsServiceContract.swift in Sources */,
 				44E3DAE5266D6EFC0013A5F3 /* SceneDelegateService.swift in Sources */,
@@ -574,23 +666,31 @@
 				44E3DB1E266E88F20013A5F3 /* ServerServicesHelper.swift in Sources */,
 				44E3DB2F266E958E0013A5F3 /* EventsServerService.swift in Sources */,
 				44E3DAF3266D78A60013A5F3 /* Storyboard.swift in Sources */,
+				44E3DB71266EDA390013A5F3 /* CollectionDataProvidingContract.swift in Sources */,
 				44E3DB3C266EB32F0013A5F3 /* DateFormatter+Extension.swift in Sources */,
 				44E3DB48266EBD060013A5F3 /* DBObjectIdentifier.swift in Sources */,
 				44E3DB3F266EBB0A0013A5F3 /* DBManagerContract.swift in Sources */,
 				44E3DB22266E8A6B0013A5F3 /* NSError+Extension.swift in Sources */,
 				44E3DB59266EC3E10013A5F3 /* Venue+Extension.swift in Sources */,
 				44E3DADD266D6B9C0013A5F3 /* AppDelegateService.swift in Sources */,
+				44E3DB78266EE37D0013A5F3 /* UIView+Extension.swift in Sources */,
 				44E3DAE0266D6C240013A5F3 /* ServicesProviding.swift in Sources */,
 				44E3DB17266E86890013A5F3 /* ServerRequesting.swift in Sources */,
+				44E3DB6E266ED9120013A5F3 /* DBNameFilterable.swift in Sources */,
 				44E3DB28266E911B0013A5F3 /* ServerAPI.swift in Sources */,
 				44E3DAF8266D79400013A5F3 /* EventsConfigurator.swift in Sources */,
 				44E3DB5C266EC8040013A5F3 /* DBObjectService+Event.swift in Sources */,
 				44E3DB4E266EC1210013A5F3 /* DBIdentifibleByStringId.swift in Sources */,
+				44E3DB6C266ED8D00013A5F3 /* FRCDataSource.swift in Sources */,
 				44E3DABC266D64EB0013A5F3 /* AppDelegate.swift in Sources */,
+				44E3DB73266EDACF0013A5F3 /* TableViewContentProvider.swift in Sources */,
+				44E3DB76266EDF2A0013A5F3 /* EventsContentProvider.swift in Sources */,
+				44E3DB5F266ECF8B0013A5F3 /* BaseCellProtocol.swift in Sources */,
 				44E3DAFC266D795C0013A5F3 /* EventsPresenter.swift in Sources */,
 				44E3DB20266E89420013A5F3 /* ErrorCodes.swift in Sources */,
 				44E3DB41266EBB410013A5F3 /* DBManager.swift in Sources */,
 				44E3DAFA266D79510013A5F3 /* EventsViewController.swift in Sources */,
+				44E3DB7C266EEFAC0013A5F3 /* UIViewController+PullToRefresh.swift in Sources */,
 				44E3DB4C266EBE220013A5F3 /* DBIdentifibleByIntId.swift in Sources */,
 				44E3DAE3266D6C6E0013A5F3 /* ServicesProvider.swift in Sources */,
 				44E3DABE266D64EB0013A5F3 /* SceneDelegate.swift in Sources */,

@@ -45,35 +45,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tnj-fq-fFC">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnS-wp-6QT">
+                                <rect key="frame" x="15" y="54" width="384" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Voc-Pj-jXr"/>
-                                    <constraint firstAttribute="width" secondItem="Tnj-fq-fFC" secondAttribute="height" multiplier="1:1" id="tVJ-2C-2t6"/>
+                                    <constraint firstAttribute="height" constant="40" id="Tnm-ms-XwW"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="GO OUT TONIGHT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qs9-xz-lX0">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="baD-5Y-1sI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Tnj-fq-fFC" firstAttribute="centerY" secondItem="JM8-3r-XQg" secondAttribute="centerY" id="XcT-ao-L0S"/>
-                            <constraint firstItem="Tnj-fq-fFC" firstAttribute="centerX" secondItem="JM8-3r-XQg" secondAttribute="centerX" id="aJv-2D-atb"/>
+                            <constraint firstItem="baD-5Y-1sI" firstAttribute="trailing" secondItem="jnS-wp-6QT" secondAttribute="trailing" constant="15" id="3Pf-ST-2Wn"/>
+                            <constraint firstItem="qs9-xz-lX0" firstAttribute="top" secondItem="jnS-wp-6QT" secondAttribute="bottom" id="Hni-aB-src"/>
+                            <constraint firstAttribute="bottom" secondItem="qs9-xz-lX0" secondAttribute="bottom" id="Jdg-eu-i0B"/>
+                            <constraint firstItem="qs9-xz-lX0" firstAttribute="leading" secondItem="baD-5Y-1sI" secondAttribute="leading" id="N3S-xg-zh3"/>
+                            <constraint firstItem="qs9-xz-lX0" firstAttribute="trailing" secondItem="baD-5Y-1sI" secondAttribute="trailing" id="PRP-pF-TyP"/>
+                            <constraint firstItem="jnS-wp-6QT" firstAttribute="top" secondItem="baD-5Y-1sI" secondAttribute="top" constant="10" id="b4D-vY-9cj"/>
+                            <constraint firstItem="jnS-wp-6QT" firstAttribute="leading" secondItem="baD-5Y-1sI" secondAttribute="leading" constant="15" id="xlS-pz-sX0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stockholm" id="oPu-n5-o1T"/>
+                    <connections>
+                        <outlet property="tableView" destination="qs9-xz-lX0" id="ehG-rk-haN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cH8-2X-cp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="117"/>
+            <point key="canvasLocation" x="1362.3188405797102" y="116.51785714285714"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

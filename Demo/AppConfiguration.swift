@@ -5,7 +5,7 @@
 //  Created by Ruslan Mishyn on 07.06.2021.
 //
 
-import Foundation
+import UIKit
 
 struct AppConfiguration {
     
@@ -18,7 +18,13 @@ struct AppConfiguration {
         /// Default value of "Content-Type" header parameter in API requests
         static let defaultContentType = HTTPContentType.json.rawValue
         /// Path to images hosting. Used as prefix to build full URL to image
-        static let imagesStorageUrl = "https://res.cloudinary.com/keyflow/image/upload"
+        static let imagesStorageUrl = "https://res.cloudinary.com/keyflow/image/upload/"
+    }
+    
+    /// Constants describing an animations throughout app
+    struct Animation {
+        static let tableViewAnimation: UITableView.RowAnimation = .fade
+        static let tableViewAnimationReload: UITableView.RowAnimation = .none
     }
     
     /// Constants used during development

@@ -34,9 +34,11 @@ class AppDelegateService {
         
         let dbManager = DBManager()
         
+        let contentProvidersFactory = ContentProvidersFactory()
+        
         let sessionService = URLSessionService()
         let eventsService = EventsService(serverService: EventsServerService(core: sessionService), dbService: dbManager.eventsService)
         
-        servicesProvider = ServicesProvider(eventsService: eventsService, dbManager: dbManager)
+        servicesProvider = ServicesProvider(eventsService: eventsService, dbManager: dbManager, contentProvidersFactory: contentProvidersFactory)
     }
 }
