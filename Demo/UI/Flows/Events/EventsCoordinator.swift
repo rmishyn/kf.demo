@@ -36,7 +36,9 @@ class EventsCoordinator: Coordinator {
     // MARK: Private methods
     
     private func setEvents() {
-        let configuration = EventsConfiguration(eventsService: servicesProvider.eventsService)
+        let configuration = EventsConfiguration(eventsService: servicesProvider.eventsService,
+                                                dbEventsService: servicesProvider.dbManager.eventsService,
+                                                contentProvidersFactory: servicesProvider.contentProvidersFactory)
         let viewController = EventsConfigurator().configure(output: self, configuration: configuration)
         navigationController.setViewControllers([viewController], animated: true)
     }

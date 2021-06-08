@@ -9,4 +9,6 @@ import Foundation
 
 protocol ServicesProviding {
     var eventsService: EventsServiceProtocol {get}
+    var dbManager: DBManagement {get}
+    var contentProvidersFactory: ContentProvidersFactoryProtocol {get}
 }
